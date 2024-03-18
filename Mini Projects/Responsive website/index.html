@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <nav>
+        <div class="logo">
+            <a href="#"><span><i class="fa-solid fa-arrows-split-up-and-left"></i>Travel</span></a>
+        </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Contect</a></li>
+            </ul>
+            <div class="toggle">
+                <i class="fa fa-bars"></i>
+            </div>
+        </nav>
+    </div>
+    <div class="main">
+        <div class="content">
+            <h4>let's Go On</h4>
+            <h1>Adventure</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, sapiente?</p>
+            <button><a href="#">Let's Start</a></button>
+        </div>
+        <div class="image">
+            <img src="hero-img.png" alt="">
+        </div>
+    </div>
+
+    <script>
+
+        let toggle = document.querySelector(".toggle");
+        let navbar = document.querySelector("nav ul");
+
+        toggle.onclick=()=>{
+            navbar.classList.toggle("show");
+        }
+
+    </script>
+</body>
+</html>
